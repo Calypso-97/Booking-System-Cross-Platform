@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include <iostream>
 #include <string>
 #include <cstdio>
 #include <fstream>
@@ -12,8 +13,7 @@ using namespace std;
 
 int c;
 
-int bookAppointment()
-{
+int bookAppointment() {
 	
 	system("cls");
 
@@ -69,6 +69,7 @@ int bookAppointment()
 
 		read.close();
 	}
+	
 	if (recordFound == 0) {
 		cout << "\n Appointment Available for following hours :";
 		char key = 'A';
@@ -87,8 +88,7 @@ int bookAppointment()
 	cout << "\n\n Input your choice : ";
 	cin >> choice;
 
-	if (!(choice >= 'A' && choice <= 'Z'))
-	{
+	if (!(choice >= 'A' && choice <= 'Z')) {
 		cout << "\n Error : Invalid Selection";
 		cout << "\n Please selection correct value from menu A- Z";
 		cout << "\n Press any key to continue";
@@ -102,8 +102,7 @@ int bookAppointment()
 	if (arr[index] == 0)
 		isBooked = 0;
 
-	if (isBooked == 1)
-	{
+	if (isBooked == 1) {
 		cout << "\n Error : Appointment is already booked for this Hour";
 		cout << "\n Please select different time !!";
 		cout << "\n Press any key to continue!!";
@@ -134,8 +133,7 @@ int bookAppointment()
 	return 0;
 }
 
-int existingAppointment()
-{
+int existingAppointment() {
 	
 	system("cls");
 	cout << "\n ----- Appointments Summary ---- \n";
