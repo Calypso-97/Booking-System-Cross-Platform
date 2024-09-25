@@ -11,9 +11,10 @@
 
 using namespace std;
 
-int c;
 
-int bookAppointment() {
+int bookAppointment(int c) {
+	
+	int c;
 	
 	system("cls");
 
@@ -133,7 +134,7 @@ int bookAppointment() {
 	return 0;
 }
 
-int existingAppointment() {
+int existingAppointment(int c) {
 	
 	system("cls");
 	cout << "\n ----- Appointments Summary ---- \n";
@@ -195,7 +196,7 @@ int existingAppointment() {
 }
 
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv int c) {
 	
 	while (1)
 	{
