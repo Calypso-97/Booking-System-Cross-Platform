@@ -14,8 +14,6 @@ using namespace std;
 
 int bookAppointment(int c) {
 	
-	int c;
-	
 	system("cls");
 
 	cout << "\n ----- Book Your Appointment ---- \n";
@@ -197,7 +195,8 @@ int existingAppointment(int c) {
 
 
 int main(int argc, char** argv int c) {
-	
+
+	int c;
 	while (1)
 	{
 		system("cls");
