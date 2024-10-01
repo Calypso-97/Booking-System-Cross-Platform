@@ -213,6 +213,9 @@ int main(int argc, char** argv) {
 		cout << "\n Enter you choice: ";
 		cin >> choice;
 
+		cin.clear();
+		fflush(stdin);
+
 		switch (choice)
 		{
 		case 1: bookAppointment(); break;
